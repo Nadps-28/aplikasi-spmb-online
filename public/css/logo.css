@@ -1,0 +1,88 @@
+/* Logo Styling */
+.logo-sekolah {
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.logo-sekolah:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+/* Responsive Logo Sizes */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 32px !important;
+        height: 32px !important;
+    }
+    
+    .hero-logo {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    
+    .dashboard-logo {
+        width: 48px !important;
+        height: 48px !important;
+    }
+    
+    .about-logo {
+        width: 80px !important;
+        height: 80px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 28px !important;
+        height: 28px !important;
+    }
+    
+    .hero-logo {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    
+    .dashboard-logo {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    .about-logo {
+        width: 60px !important;
+        height: 60px !important;
+    }
+}
+
+/* Logo Animation */
+@keyframes logoFloat {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.logo-float {
+    animation: logoFloat 3s ease-in-out infinite;
+}
+
+/* Logo with text alignment */
+.logo-with-text {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo-with-text img {
+    flex-shrink: 0;
+}
+
+/* Print styles */
+@media print {
+    .logo-sekolah {
+        filter: none !important;
+        transform: none !important;
+    }
+}
